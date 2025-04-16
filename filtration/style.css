@@ -1,0 +1,29 @@
+body {
+    font-family: "IBM Plex Sans", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.add-height {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 14px;
+    border-radius: 15px;
+    color: #000;
+    background-color:#bbbbbb;
+    margin: 0 20px 0 0 ;
+}
+
+.filter {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 14px;
+    border-radius: 15px;
+    color: #000;
+    background-color:#ffd700;
+}

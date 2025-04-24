@@ -1,0 +1,80 @@
+.header {
+  padding: 16px 0;
+
+  @include vp-1023 {
+    padding: 11px 0 20px 0;
+  }
+
+  @include vp-767 {
+    padding: 10px 0 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  &__logo-link {
+    display: flex;
+    margin-right: auto;
+
+  }
+
+  &__logo-image {
+    
+    @include vp-767 {
+      width: 98px;
+      height: 42px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin: 0 24px 0 0;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    column-gap: 8px;
+    padding: 5px;
+
+    @include vp-1023 {
+      border: none;
+      margin: 0;
+      padding: 15px 0 0 0;
+    }
+  }
+
+  &__btn {
+    width: 128px;
+
+    &--active {
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &__language-link {
+    outline: none;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    padding: 17px 22px 17px 21px;
+
+    &:hover , &:focus-visible {
+      background-color: #EAECF4;
+    }
+
+    &:disabled {
+      background-color: #F0F0F0;
+      color: #9A9BA0;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/header.css";
+@import "blocks/animation.css";
+@import "blocks/footer.css";
+@import "blocks/socials.css";
+@import "blocks/order-form.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-radio.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/packet.css";
+@import "blocks/card.css";
+@import "blocks/hero-form.css";
+@import "blocks/delivery.css";
+@import "blocks/questions.css";
+
+

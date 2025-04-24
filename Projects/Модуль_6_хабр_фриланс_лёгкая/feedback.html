@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Обратная связь - БЕСIT</title>
+</head>
+
+<body>
+  <main>
+    <!-- Обратная связь -->
+    <section class="order">
+      <h1 class="order-tittle visually-hidden"> Обратная связь БЕСIT</h1>
+      <div class="container">
+        <div class="order__inner">
+          <form class="order__inner-center" action="#" method="POST">
+            <h2 class="order__tittle">БЕС<span class="order__tittle-text">IT</span></h2>
+            <p class="order__text">Поделись болью, вопросом или расскажи миру о том, кто из коллег съел твой йогурт</p>
+            <div class="custom-textarea">
+              <textarea class="custom-textarea__field" aria-label="Введите своё сообщение"
+                placeholder="Твоё сообщение ..." name="feedback"></textarea>
+              <button class="custom-textarea__btn " type="submit">
+                <svg class="custom-textarea__svg" width="24" height="24">
+                  <use xlink:href="images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <ul class="order__list">
+            <li class="order__item">
+              <div class="bubble bubble--beige">
+                <p class="bubble__text">Бесит когда дизайнеры в 10 раз правят отступы, после того как я закончил править ПП</p>
+                <svg class="bubble__icon" width="32" height="40">
+                  <use xlink:href="images/sprite.svg#icon-callout"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--blue">
+                <p class="bubble__text">Я всю жизнь хотел в IT и у меня получилось. Но теперь я хочу с кем-то об этом поговорить...</p>
+                <img class="bubble__img" src="images/mascot_1.png" alt="Картинка фиолетового дьявола" >
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--purple">
+                <p class="bubble__text">Для тестировщиков есть отдельный котёл в аду, я проверяла</p>
+                <svg class="bubble__icon" width="32" height="40">
+                  <use xlink:href="images/sprite.svg#icon-callout"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--green">
+                <p class="bubble__text">Что делать, если я хочу быть котиком, но надо идти и писать код?</p>
+                <svg class="bubble__icon" width="32" height="40">
+                  <use xlink:href="images/sprite.svg#icon-callout"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--red">
+                <p class="bubble__text">Как же бесит Safari и его бесконечные баги с анимациями</p>
+                <svg class="bubble__icon" width="32" height="40">
+                  <use xlink:href="images/sprite.svg#icon-callout"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--violet">
+                <p class="bubble__text">У меня так много рабочих созвонов, что может показаться, что я зарабатываю не разработкой, а вебкамом</p>
+                <img class="bubble__img" src="images/mascot_2.png" alt="Картинка злогого оранжевого смайлика" >
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="bubble bubble--brown">
+                <p class="bubble__text">4 часа искать ошибку в коде, а в итоге найти неправильно написанное слово "heigth"</p>
+                <svg class="bubble__icon" width="32" height="40">
+                  <use xlink:href="images/sprite.svg#icon-callout"></use>
+                </svg>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+     </section>
+  </main>
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-info">
+          <a class="footer__logo-link" href="feedback.html">
+            <svg class="footer__svg" width="120" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="footer__copyright">
+            <svg class="footer__copyright" width="24" height="24">
+              <use xlink:href="images/sprite.svg#icon-copyright"></use>
+            </svg>
+            <span class="footer__copyright-text">Все права защищены и принадлежат народу</span>
+          </div>
+        </div>
+        <div class="footer__inner-right">
+          <p class="footer__text">Читай подборку по дороге на работу или за чашкой кофе</p>
+          <form class="footer__form" action="#">
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" placeholder="Электронная почта" aria-label="Ввести данные электронной почты" name="email">
+              <svg class="custom-input__icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+            <button class="footer__btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

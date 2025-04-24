@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Опрос - БЕСIT</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__anim">
+      <span class="header__green"></span>
+      <div class="header__picture">
+        <div class="header__image-big">
+          <img class="header__img" src="images/devil.png" width="320" height="320"
+            alt="Изображение фиолетового монстрика">
+        </div>
+      </div>
+      <div class="header__cubes">
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+        <span class="header__cube"></span>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__text">
+          <div class="header__title-wrap">
+            <p class="header__title"><span class="header__title-accent">Бес</span>it</p>
+          </div>
+          <div class="header__desc-wrap">
+            <p class="header__description">А теперь подберем для тебя подходящий антистрессовый продукт</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="header__burger" aria-label="Переключаетель меню">
+        <svg class="header__burger-icon" width="40" height="40" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- Форма опроса -->
+    <section class="order">
+      <h1 class="order__tittle visually-hidden">Опрос БЕСIT</h1>
+      <form class="order-form" action="#">
+        <div class="container">
+          <fieldset class="order-form__group">
+            <legend class="order-form__group-name">Ответь на&nbsp;простые вопросы</legend>
+            <div class="questions">
+              <ul class="questions__list">
+                <!--Когда по вашей задаче наступает дедлайн, а у вас ничего не готово. Вы..-->
+                <li class="questions__item questions__item--size-big">
+                  <p class="questions__name">Когда по&nbsp;вашей задаче наступает дедлайн, а&nbsp;у&nbsp;вас
+                    ничего не
+                    готово. Вы..</p>
+                  <div class="custom-checkbox ">
+                    <input class="custom-checkbox__field visually-hidden" id="youTask-first" type="checkbox"
+                      name="youTask">
+                    <label class="custom-checkbox__label" for="youTask-first">
+                      <span class="custom-checkbox__heading">Cтараетесь наверстать упущенное</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youTask-second"
+                      name="youTask">
+                    <label class="custom-checkbox__label" for="youTask-second">
+                      <span class="custom-checkbox__heading">Звоните своей бабуле и&nbsp;просите о&nbsp;помощи</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youTask-third"
+                      name="youTask">
+                    <label class="custom-checkbox__label" for="youTask-third">
+                      <span class="custom-checkbox__heading">Отвлекаете менеджера мемами</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youTask-fourth"
+                      name="youTask-fourth">
+                    <label class="custom-checkbox__label" for="youTask-fourth">
+                      <span class="custom-checkbox__heading">Впервые открываете ТЗ</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </li>
+                <!--Удается ли вам высыпаться?-->
+                <li class="questions__item">
+                  <p class="questions__name">Удается&nbsp;ли вам высыпаться?</p>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="spillOut-first" name="spillOut">
+                    <label class="custom-radio__label" for="spillOut-first">Куда высыпаться?</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="spillOut-second"
+                      name="spillOut">
+                    <label class="custom-radio__label" for="spillOut-second">Что такое высыпаться?</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="spillOut-third" name="spillOut">
+                    <label class="custom-radio__label" for="spillOut-third">А&nbsp;что, можно высыпаться?</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="spillOut-fourth"
+                      name="spillOut">
+                    <label class="custom-radio__label" for="spillOut-fourth">Я&nbsp;люблю высыпаться</label>
+                  </div>
+                </li>
+                <!--Какой баг вы считаете самым полезным?-->
+                <li class="questions__item">
+                  <p class="questions__name">Какой баг вы&nbsp;считаете самым полезным?</p>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="isBug-first" name="isBug">
+                    <label class="custom-radio__label" for="isBug-first">Найденный тестировщиком</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="isBug-second" name="isBug">
+                    <label class="custom-radio__label" for="isBug-second">Ненайденный тестировщиком</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="isBug-third" name="isBug">
+                    <label class="custom-radio__label" for="isBug-third">Найденный клиентом,
+                      но&nbsp;не&nbsp;тестировщиком</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input class="custom-radio__field visually-hidden" type="radio" id="isBug-fourth" name="isBug">
+                    <label class="custom-radio__label" for="isBug-fourth">Найденный вами, но&nbsp;ненайденный никем
+                      больше:
+                      раз
+                      никто не&nbsp;нашел, значит править не&nbsp;надо</label>
+                  </div>
+                </li>
+                <!--Какие "физические" упражнения вы предпочитаете?-->
+                <li class="questions__item questions__item--size-big">
+                  <p class="questions__name">Какие &laquo;физические&raquo; упражнения
+                    вы&nbsp;предпочитаете?</p>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youPrefer-first"
+                      name="youPrefer">
+                    <label class="custom-checkbox__label" for="youPrefer-first">
+                      <span class="custom-checkbox__heading">Разминку для глаз: отловить баг, который никак
+                        не&nbsp;удается
+                        поймать</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youPrefer-second"
+                      name="youPrefer">
+                    <label class="custom-checkbox__label" for="youPrefer-second">
+                      <span class="custom-checkbox__heading">Разминку для языка: объяснить менеджеру, что баг
+                        от&nbsp;клиента
+                        на&nbsp;самом деле не&nbsp;баг, а&nbsp;фича</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youPrefer-third"
+                      name="youPrefer">
+                    <label class="custom-checkbox__label" for="youPrefer-third">
+                      <span class="custom-checkbox__heading">Разминку для пальчиков: написать за&nbsp;час весь код,
+                        который
+                        надо было написать за&nbsp;три дня</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="youPrefer-fourth"
+                      name="youPrefer">
+                    <label class="custom-checkbox__label" for="youPrefer-fourth">
+                      <span class="custom-checkbox__heading">Разминка для ума: почему этот код работает, если он&nbsp;не
+                        должен работать, а&nbsp;этот код не&nbsp;работает, если он&nbsp;должен работать?</span>
+                      <svg class="custom-checkbox__icon" width="17" height="15" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check_mark"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <div class="hero-form">
+          <div class="container">
+            <svg class="hero-form__icon" width="72" height="32">
+              <use xlink:href="images/sprite.svg#icon-vector"></use>
+            </svg>
+            <fieldset class="hero-form__group">
+              <legend class="hero-form__group-name">Изучи получившийся пакет</legend>
+              <div class="hero-form__card">
+                <div class="packet">
+                  <ul class="packet__list">
+                    <li class="packet__item">
+                      <div class="card ">
+                        <svg class="card__icon" width="382" height="248" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-junior"></use>
+                        </svg>
+                        <div class="card__content">
+                          <h2 class="card__tittle">Не<span class="card__tittle-upper">БЕС</span>ит Junior</h2>
+                          <p class="card__description">Идеальный вариант чтобы успокоиться, стать увереннее
+                            и&nbsp;организовать все
+                            что не&nbsp;организовано</p>
+                          <div class="card__wrapper">
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+99%</span>
+                              <span class="card__wrapper-info-text">к&nbsp;спокойствию</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+3</span>
+                              <span class="card__wrapper-info-text">степени уверенности</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+7</span>
+                              <span class="card__wrapper-info-text">уровней организованности</span>
+                            </div>
+                          </div>
+                          <button class="card__btn" type="button">Посмотреть детали</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="packet__item">
+                      <div class="card card--modified card--active card--middle">
+                        <svg class="card__icon" width="382" height="248" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-middle"></use>
+                        </svg>
+                        <div class="card__content">
+                          <h2 class="card__tittle">Не<span class="card__tittle-upper">БЕС</span>ит Middle</h2>
+                          <p class="card__description">Инициатива не&nbsp;заставит себя ждать, социальная
+                            привлекательность
+                            возрастет до&nbsp;небес, а&nbsp;задачи наполнятся творчеством</p>
+                          <div class="card__wrapper">
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+150%</span>
+                              <span class="card__wrapper-info-text">к&nbsp;инициативности</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+10</span>
+                              <span class="card__wrapper-info-text">уровней социальной привлекательности</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+1</span>
+                              <span class="card__wrapper-info-text">посещение творческой музы</span>
+                            </div>
+                          </div>
+                          <button class="card__btn" type="button">Посмотреть детали</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="packet__item">
+                      <div class="card card--modified-senior card--active card--senior">
+                        <svg class="card__icon" width="382" height="248" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#icon-senior"></use>
+                        </svg>
+                        <div class="card__content">
+                          <h2 class="card__tittle">Не<span class="card__tittle-upper">БЕС</span>ит Senior</h2>
+                          <p class="card__description">Для тех кто хочет вырваться на&nbsp;новый уровень. Повышаем
+                            авторитетность, качаем дипломатию и&nbsp;заряжаем на&nbsp;успех.</p>
+                          <div class="card__wrapper">
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+33%</span>
+                              <span class="card__wrapper-info-text">к&nbsp;авторитетности</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+5</span>
+                              <span class="card__wrapper-info-text">уровней дипломатии</span>
+                            </div>
+                            <div class="card__wrapper-info">
+                              <span class="card__wrapper-info-figure">+100</span>
+                              <span class="card__wrapper-info-text">зарядов успех</span>
+                            </div>
+                          </div>
+                          <button class="card__btn" type="button">Посмотреть детали</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </fieldset>
+
+          </div>
+        </div>
+        <div class="container">
+          <fieldset class="delivery">
+            <legend class="delivery__name">Укажи куда доставить</legend>
+            <div class="delivery__inner">
+              <!--Укажи куда доставить-->
+              <div class="delivery-form">
+                <div class="custom-input custom-input--error">
+                  <input class="custom-input__field" type="text" placeholder="Имя" required>
+                  <label class="custom-input__label">
+                    <svg class="custom-input__icon" width="22" height="18">
+                      <use xlink:href="images/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <div class="delivery-form">
+                <div class="custom-input">
+                  <input class="custom-input__field" type="tel" placeholder="Телефон" required>
+                  <label class="custom-input__label">
+                    <svg class="custom-input__icon" width="18" height="18">
+                      <use xlink:href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <div class="custom-textarea">
+                <textarea class="custom-textarea__field" name="comment" aria-label="введите ваш комментарий"
+                  placeholder="Комментарий"></textarea>
+                <svg class="custom-textarea__icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-comment"></use>
+                </svg>
+              </div>
+            </div>
+            <button class="delivery__btn" type="submit">Оформить</button>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал мы тоже сверстали, извините 😉 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-info">
+          <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу">
+            <svg class="footer__logo" width="145" height="40" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer__copyright">
+            <svg class="footer__copyright-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-copy"></use>
+            </svg>
+            <span class="footer__copyright-text">Все права защищены и&nbsp;принадлежат народу</span>
+          </div>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на ВК">
+              <svg class="socials__icon" width="19" height="11" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на Ютуб">
+              <svg class="socials__icon" width="16" height="12" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на ОК">
+              <svg class="socials__icon" width="12" height="19" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Ссылка на Телеграм">
+              <svg class="socials__icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

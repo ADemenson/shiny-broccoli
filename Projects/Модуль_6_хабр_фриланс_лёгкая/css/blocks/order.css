@@ -1,0 +1,94 @@
+/*.order {
+    padding: 40px 0 62px 0;
+}*/
+
+.order__inner {
+    position: relative;
+}
+
+.order__inner-center {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 540px;
+    text-align: center;
+    padding-top: 327px;
+    padding-bottom: 310px;
+}
+
+.order__tittle {
+    font-family: "Press Start 2P";
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #87F29A;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.order__tittle-text {
+    color: #FFFFFF;
+}
+
+.order__text {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.order__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.order__item:nth-child(1) {
+    position: absolute;
+    top: 156px;
+    left: 63px;
+}
+
+.order__item:nth-child(2) {
+    position: absolute;
+    top: 83px;
+    right: 398px;
+}
+
+
+.order__item:nth-child(3) {
+    position: absolute;
+    top: 231px;
+    right: 24px;
+}
+
+.order__item:nth-child(4) {
+    position: absolute;
+    bottom: 265px;
+    right: 0;
+}
+
+.order__item:nth-child(5) {
+    position: absolute;
+    bottom: 62px;
+    right: 212px;
+}
+
+.order__item:nth-child(6) {
+    position: absolute;
+    bottom: 85px;
+    left:142px;
+}
+
+.order__item:nth-child(7) {
+    position: absolute;
+    bottom: 311px;
+    left:0;
+}

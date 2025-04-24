@@ -1,0 +1,14 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/footer.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/order.css";
+@import "blocks/bubble.css";

@@ -1,0 +1,44 @@
+.order-form {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 0 80px 0;
+    counter-reset: counter;
+}
+
+.order-form__group {
+    padding: 0 0 79px 0;
+    border: none;
+    border-radius:24px;
+    margin: 0;
+}
+
+.order-form__group--size-big {
+    grid-column: span 2;
+}
+
+.order-form__group-name {
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    counter-increment: counter;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 33px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.order-form__group-name::before {
+    content: counter(counter);
+    background-color: #87F29A;
+    color: #000000;
+    border-radius: 50%;
+    margin: 0 24px 0 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

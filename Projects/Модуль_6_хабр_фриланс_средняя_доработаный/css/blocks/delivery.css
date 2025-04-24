@@ -1,0 +1,66 @@
+.delivery {
+    width: 1200px;
+    border: none;
+    margin: 80px 0 0 0;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+.delivery__name {
+    font-family: "Press Start 2P";
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    counter-increment: counter;
+    display: flex;
+    align-items: center;
+}
+
+.delivery__name::before {
+    content: counter(counter);
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    background-color: #87F29A;
+    padding: 18px;
+    border-radius: 50%;
+    margin: 0 24px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.delivery-form__group {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+    width: 874px;
+    flex-wrap: wrap;
+}
+
+.delivery__btn {
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #87F29A;
+    padding: 47px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.delivery__btn:hover , .delivery__btn:focus-visible {
+    background-color: #78DF8A;
+    outline: none;
+}

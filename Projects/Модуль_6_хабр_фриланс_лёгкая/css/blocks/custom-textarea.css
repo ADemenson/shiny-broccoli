@@ -1,0 +1,31 @@
+.custom-textarea {
+    position: relative;
+}
+
+.custom-textarea__field {
+    width: 540px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    border: none;
+    padding: 16px 48px 16px 24px;
+    font-size: 22px;
+    color: #FFFFFF;
+    height:64px ;
+}
+
+.custom-textarea__field::placeholder {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.custom-textarea__btn {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}

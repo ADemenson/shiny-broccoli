@@ -1,0 +1,111 @@
+.bubble {
+    padding: 32px 40px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.bubble--beige {
+    width: 363px;
+    background-color: #676A47;
+    color: #676A47;
+    min-height:136px;
+}
+
+.bubble--beige .bubble__icon {
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    right: -17px;
+    bottom: 0;
+}
+
+.bubble--blue {
+    width: 334px;
+    min-height: 160px;
+    background-color: #243961;
+}
+
+.bubble--blue .bubble__img {
+    position: absolute;
+    top: -43px;
+    left: -110px;
+    z-index: -1;
+}
+
+.bubble--purple {
+    width: 297px;
+    min-height: 136px;
+    background-color: #61235F;
+    color:#61235F ;
+}
+
+.bubble--purple .bubble__icon {
+    position: absolute;
+    left: -17px;
+    transform: scale(-1,1);
+    bottom: 0;
+}
+
+.bubble--green {
+    width: 283px;
+    min-height: 136px;
+    background-color: #315C51;
+    color: #315C51;
+}
+
+.bubble--green .bubble__icon {
+    position: absolute;
+    left: -17px;
+    transform: scale(-1,1);
+    bottom: 0;
+}
+
+.bubble--red {
+    width: 363px;
+    min-height: 112px;
+    background-color: #6A2844;
+    color: #6A2844;
+}
+
+.bubble--red .bubble__icon {
+    position: absolute;
+    left: -17px;
+    transform: scale(-1,1);
+    bottom: 0;
+}
+
+.bubble--violet {
+    width: 423px;
+    min-height: 136px;
+    background-color: #432858;
+    color: #432858;
+}
+
+.bubble--violet .bubble__img {
+    position: absolute;
+    top: -45px;
+    right: -114px;
+    z-index: -1;
+}
+
+.bubble--brown {
+    width: 303px;
+    min-height: 160px;
+    background-color: #62432C;
+    color: #62432C;
+}
+
+.bubble--brown .bubble__icon {
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    right: -17px;
+    bottom: 0;
+}
+
+.bubble__text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 24px;
+}

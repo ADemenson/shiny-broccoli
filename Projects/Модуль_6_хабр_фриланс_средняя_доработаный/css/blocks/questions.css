@@ -1,0 +1,27 @@
+.questions__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 500px auto 500px;
+    gap: 28px 24px;
+}
+
+.questions__item {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius:24px;
+    padding: 40px 64px;
+}
+
+.questions__item--size-big {
+    grid-column: span 2;
+}
+
+.questions__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 0 40px 0;
+}

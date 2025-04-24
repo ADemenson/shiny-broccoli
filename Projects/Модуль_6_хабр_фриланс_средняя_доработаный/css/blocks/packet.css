@@ -1,0 +1,15 @@
+.packet {
+    display: flex;
+}
+
+.packet__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 27px;
+}
+.packet__item {
+    width : calc(100%/3 - 27px * (2/3));
+}

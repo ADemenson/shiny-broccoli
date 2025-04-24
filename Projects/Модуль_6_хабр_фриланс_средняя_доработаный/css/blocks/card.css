@@ -1,0 +1,172 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    min-height: 664px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    min-height: 664px;
+    border-radius: 40px;
+}
+
+.card--active {
+    background-color: #121C25;
+    border-radius: 40px;
+}
+
+.card--active .card__tittle {
+    color: #ffffff;
+}
+
+.card--active .card__description  {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.card--active .card__wrapper-info__text {
+    color: #FFFFFF
+}
+
+.card--junior .card__btn {
+    background-color: #AFA3FF;
+}
+
+.card--senior .card__btn {
+    background-color: #FFC61F;
+}
+
+.card__icon {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.card--modified {
+    background-color: #121C25;
+    border-radius: 40px;
+}
+
+.card--modified .card__description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card--modified .card__wrapper-info-figure   {
+    background-color: #87F29A;
+    color: #000000;
+}
+
+.card--modified .card__wrapper-info__text {
+    color: #ffffff;
+}
+
+.card--modified .card__btn {
+    background-color: #87F29A;
+    color: #000000;
+}
+
+.card--modified .card__tittle {
+    color: #ffffff;
+}
+
+.card--modified .card__tittle-upper {
+    color: #87F29A;
+}
+
+.card--modified-senior .card__tittle-upper {
+    color: #FFC61F;
+}
+
+.card--modified__senior .card__tittle-upper {
+    color: #FFC61F;
+}
+
+.card--modified-senior .card__wrapper-info-figure {
+    background-color: #FFC61F;
+}
+
+.card__content {
+    padding: 0 25px 29px 31px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card__tittle {
+    font-family: "Press Start 2P";
+    color: #000000;
+    font-size: 22px;
+    line-height: 28px;
+    margin: -2px 0 13px 0;
+}
+
+.card__tittle-upper {
+    color: #AFA3FF;
+}
+
+.card__description {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 24px 0;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card__wrapper-info {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px ;
+}
+
+.card__wrapper-info-figure {
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: #AFA3FF;
+}
+
+.card__wrapper-info__text {
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+.card__btn {
+    margin-top: auto;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.card--junior .card__btn:hover , .card--junior .card__btn:focus-visible {
+    background-color: #998CF1;
+    outline: 1px solid #000000
+}
+
+.card--middle .card__btn:hover , .card--middle .card__btn:focus-visible {
+    background-color: #78DF8A;
+    outline: 1px solid #000000;
+}
+
+.card--senior .card__btn:hover , .card--senior .card__btn:focus-visible {
+    background-color: #F2B913;
+    outline: 1px solid #000000;
+}
+
+.card__btn:hover , .card__btn:focus-visible {
+    border: 1px solid #000000;
+
+}

@@ -22,7 +22,7 @@
     color: rgba(255, 255, 255, 0.6)
 }
 
-.card--active .card__wrapper-info__text {
+.card--active .card__wrapper-info-text {
     color: #FFFFFF
 }
 
@@ -53,7 +53,7 @@
     color: #000000;
 }
 
-.card--modified .card__wrapper-info__text {
+.card--modified .card__wrapper-info-text {
     color: #ffffff;
 }
 
@@ -130,7 +130,7 @@
     background-color: #AFA3FF;
 }
 
-.card__wrapper-info__text {
+.card__wrapper-info-text {
     color: #000000;
     font-size: 14px;
     line-height: 20px; 

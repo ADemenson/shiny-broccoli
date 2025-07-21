@@ -1,0 +1,99 @@
+.main-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 100px 30px 28px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:768px) {
+        display: none;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background: linear-gradient(171.29deg, #1919EF 0%, #060698 100%);
+        transition: opacity $transition-300;
+
+        .header--open & {
+            opacity: 1;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        transition: opacity $transition-300;
+
+        .header--open & {
+            opacity: 1;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: opacity $transition-300 ,
+            transform $transition-300 ;
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                transition-delay: $i * 0.1s;
+            }
+        }
+
+        .header--open & {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    &__link {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
+    &__footer {
+        transform: translateX(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity $transition-300 ,
+            transform $transition-300 ;
+
+        .header--open & {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity $transition-300 0.7s,
+                transform $transition-300 0.3s;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+    }
+}

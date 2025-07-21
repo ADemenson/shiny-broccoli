@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="film-form">
+        <label for="title">Название:</label><br>
+        <input type="text" id="title" name="title">
+        <div id="error-title" class="error" data-field="title"></div><br>
+        <label for="genre">Жанр:</label><br>
+        <input type="text" id="genre" name="genre">
+        <div id="error-genre" class="error"></div><br>
+        <label for="releaseYear">Год:</label><br>
+        <input type="text" id="releaseYear" name="releaseYear">
+        <div id="error-releaseYear" class="error"></div><br>
+        <input type="checkbox" id="isWatched" name="isWatched">
+        <label for="isWatched">Успели посмотреть?</label><br>
+        <input type="submit" value="Добавить">
+    </form>
+    <form id="form-search">
+        <div class="form-search__wrapper">
+            <!-- Для инпутов, необходимых для поиска -->
+            <div class="custom__input">
+                <input type="text" id="titleSearch" placeholder="Название фильма">
+            </div>
+            <div class="custom__input">
+                <input type="text" id="genreSearch" placeholder="Жанр">
+            </div>
+            <div class="custom__input">
+                <input type="text" id="releaseYearSearch" placeholder="Год релиза">
+            </div>
+            <button class="form-search__btn">Удалить всё</button>
+        </div>
+    </form>
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>

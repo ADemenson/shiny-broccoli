@@ -1,0 +1,95 @@
+.header {
+  padding: 30px 0;
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &--open {
+    padding: 19px 0 30px 0;
+
+    @include vp-1023 {
+      padding: 30px 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header--open & {
+      flex-direction: column;
+      align-items: flex-end;
+
+      @include vp-1023 {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0 20px 0 0;
+
+    svg {
+      width: 238px;
+      height: 12px;
+    }
+
+    .header--open & {
+      opacity: 0;
+
+      @include vp-1023 {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__burger-btn {
+    position: relative;
+
+    @media (min-width:768px) {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      height: 4px;
+      width: 32px;
+      background-color: $color-black;
+      position: absolute;
+      top: -7px;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      transition: background-color $transition-300, top $transition-300 0.3s, transform $transition-300;
+    }
+
+    &::after {
+      top: 3px;
+      transition: background-color $transition-300, top $transition-300 0.3s, transform $transition-300;
+    }
+
+    .header--open & {
+      &::after {
+        background-color: $color-white;
+        top: 0;
+        transform: translateX(-50%) rotate(45deg);
+        transition: background-color $transition-300, top $transition-300, transform $transition-300 0.3s;
+      }
+
+      &::before {
+        background-color: $color-white;
+        top: 0;
+        transform: translateX(-50%) rotate(-45deg);
+        transition: background-color $transition-300, top $transition-300, transform $transition-300 0.3s;
+      }
+    }
+  }
+}

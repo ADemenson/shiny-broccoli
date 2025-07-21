@@ -1,0 +1,16 @@
+.burger {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+
+  @include vp-1023 {
+    display: flex;
+  }
+}

@@ -1,0 +1,43 @@
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  z-index: 20;
+  $root: &;
+
+  &__icon--open {
+    @include vp-767 {
+    display: none;
+  }
+  }
+
+  &__icon--close {
+    @include vp-767 {
+    display: none;
+  }
+  }
+
+
+  // .header--open & {
+  //   #{$root}__icon--open {
+  //     display: none;
+  //   }
+
+  //   #{$root}__icon--close {
+  //     display: flex;
+  //     opacity: 1;
+  //     animation: burgerClose $transition-1000 forwards;
+  //   }
+  // }
+
+  &__icon--close {
+    display: none;
+  }
+}
+

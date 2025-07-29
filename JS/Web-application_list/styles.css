@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+    color: #333;
+}
+
+.card {
+    padding: 50px 50px;
+    margin: 0 auto;
+    width: 900px;
+    box-shadow: 0px 0px 5px #999;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.main-title {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid #646363;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.text-field:hover {
+    opacity: 70%;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #eb5c5c;
+    font-size: 18px;
+    color: rgb(255, 241, 241);
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 70%;
+}
+
+.product-table {
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px #999;
+}
+
+.container-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-wrap .btn {
+    width: auto;
+}
+
+.delete-btn {
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #f76c6c;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.delete-btn:hover {
+    opacity: 70%;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+th:hover {
+    opacity: 70%;
+}
+
+td {
+    vertical-align: top;
+}
+
+tr {
+    font-size: 18px;
+}
